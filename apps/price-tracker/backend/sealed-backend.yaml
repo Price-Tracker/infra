@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: backend
+  namespace: price-tracker
+spec:
+  encryptedData:
+    psql-connection-string: AgBIBfBUBW0gp9y3w/Eg3ELo2Xzofl71fS/+VkqVLODF2ZlJSBo2KenkM+WbJZ3rdE9BgmLnrPk916fFLRQ+P7sk0L5E+uaNwGs3u2lA/XDU7DLsi61nJRDETCU/sQqnBk9pTTyVxBYee/D42iG4z5vN+iRY+3nAcX2/MOIs4fLaKrFDNlHxhn6MsonWAe+Dmzr6COdum1UYFzXnKzmw6Zsr0M1xNkrBEiq36DSSRkO6A2AW/pvs+Di/wkYpaM058eO2kUiHPZvl86kP/vRMXt8pye2yO6m8djWq8N9MVmJtk8wl6CJAI7p83nIvhlzA3R9w3LUqIzTo/sK8U+yKKjsEsroXWZc6cgTbCvvh8/jEivBjmFcC8/QRrzy5AAMdr12ozSsgGod1pey1YggGFXhh6Uxb8oq9cYhKeMZ+EkiDGdmZsRuXo1rbL/sG8GH2TAEDDzPcQn3gWDC7sjYhWtSJb7foXlxfp4kYMrHMI5tVhE9hxYAMzWpJAqtw7ntiWVI/vnh5NflswnPnIyxbnttwLEDlSrlcRojOetsNC5rJdChrju6vgjUPVM4+YnewWEkbixk/kWzV4zxDUkXBRDSkuizvRQhu3RYYI6IYCZIwdGahxcacfRRyw8QcqsT6Sjk3xnWGSYoI4vqTfPJUY0C+VU75bx18bCsui72Le9nkQo87NMgWUCV4gLVGc5fUM5SUJWpUesT7RNKtzGiiRF/eG4N9G0dSern1FuyMrlXMICrqtHASKUePGHB1Yla8y9ahBjfcxyQ1KwBOGGcz3oUc1DjtDQ==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: backend
+      namespace: price-tracker
+
