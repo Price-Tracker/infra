@@ -11,13 +11,7 @@
       in
       {
         devShell = with pkgs; mkShell {
-          buildInputs = [ kubectl kubernetes-helm ];
-
-          shellHook = ''
-            SHELL_NAME=$(basename "$SHELL")
-
-            eval $(kubectl completion "$SHELL_NAME")
-          '';
+          buildInputs = [ kubectl fluxcd kubeseal ];
         };
       });
 }
