@@ -1,0 +1,9 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: backend
+spec:
+  image: ghcr.io/price-tracker/backend
+  interval: 1m0s
+  secretRef:
+    name: ghcr
