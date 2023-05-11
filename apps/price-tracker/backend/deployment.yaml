@@ -22,7 +22,7 @@ spec:
               containerPort: 80
               protocol: TCP
           env:
-            - name: PORT
+            - name: APP_PORT
               value: "80"
             - name: DATABASE_URL
               valueFrom:
