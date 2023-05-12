@@ -29,5 +29,12 @@ spec:
                 secretKeyRef:
                   name: backend
                   key: psql-connection-string
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: backend
+                  key: jwt-secret
+            - name: JWT_EXPIRES_IN_SECS
+              value: "300"
       imagePullSecrets:
         - name: ghcr
