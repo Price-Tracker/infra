@@ -22,3 +22,6 @@ spec:
         type: NodePort
         nodePorts:
           http: 30007
+      config:
+        enable-brotli: "true"
+
