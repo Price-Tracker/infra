@@ -17,13 +17,6 @@ spec:
       containers:
         - name: backend-container
           image: ghcr.io/price-tracker/backend:20230523214410-4fd4e51 # {"$imagepolicy": "flux-system:backend"}
-          resources:
-            requests:
-              memory: "128Mi"
-              cpu: "250m"
-            limits:
-              memory: "128Mi"
-              cpu: "250m"
           ports:
             - name: http
               containerPort: 80
