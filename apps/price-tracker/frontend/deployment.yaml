@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: ghcr.io/price-tracker/frontend:main-d1ba6009-1684890488 # {"$imagepolicy": "flux-system:frontend"}
+          image: ghcr.io/price-tracker/frontend:main-bb89410b-1684891113 # {"$imagepolicy": "flux-system:frontend"}
           ports:
             - name: http
               containerPort: 80
