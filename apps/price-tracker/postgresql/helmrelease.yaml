@@ -18,5 +18,5 @@ spec:
   values:
     primary:
       persistence:
-        storageClass: local-path
-        size: 32Gi
+        storageClass: default
+        size: 8Gi
