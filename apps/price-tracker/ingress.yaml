@@ -4,6 +4,7 @@ metadata:
   name: price-tracker-ingress
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-dev
+    kubernetes.io/tls-acme: "true"
 spec:
   ingressClassName: nginx
   tls:
