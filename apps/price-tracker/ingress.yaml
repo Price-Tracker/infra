@@ -2,10 +2,17 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: price-tracker-ingress
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-dev
 spec:
   ingressClassName: nginx
+  tls:
+  - hosts:
+      - elxreno.me
+    secretName: elxreno-me-tls
   rules:
-  - http:
+  - host: elxreno.me
+    http:
       paths:
       - path: /
         pathType: Prefix
