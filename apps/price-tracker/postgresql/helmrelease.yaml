@@ -17,6 +17,8 @@ spec:
       interval: 10m
   values:
     primary:
+      initdb:
+        scriptsConfigMap: postgres-init
       persistence:
         storageClass: default
         size: 8Gi
