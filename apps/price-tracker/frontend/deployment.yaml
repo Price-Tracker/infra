@@ -21,5 +21,8 @@ spec:
             - name: http
               containerPort: 80
               protocol: TCP
+          env:
+            - name: API_BASE_URL
+              value: "https://infinity.tail1f457.ts.net:10000/api"
       imagePullSecrets:
         - name: ghcr
