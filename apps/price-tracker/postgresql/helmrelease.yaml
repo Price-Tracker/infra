@@ -20,5 +20,5 @@ spec:
       initdb:
         scriptsConfigMap: postgres-init
       persistence:
-        storageClass: default
-        size: 8Gi
+        storageClass: local-path
+        size: 32Gi
