@@ -6,9 +6,9 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  interval: 20s
+  interval: 1m0s
   ref:
-    branch: azure
+    branch: hcloud
   secretRef:
     name: flux-system
   url: ssh://git@github.com/Price-Tracker/infra
