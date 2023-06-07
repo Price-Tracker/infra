@@ -7,11 +7,12 @@ spec:
     email: "elxreno@gmail.com" # My email is not a secret
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
-      name: cloudflare-issuer-account-key
+      name: letsencrypt
     solvers:
-      - dns01:
-          cloudflare:
-            email: "elxreno@gmail.com"
-            apiTokenSecretRef:
-              name: cloudflare-api-token-secret
-              key: api-token
+    - http01:
+        ingress:
+          class: nginx
+          podTemplate:
+            spec:
+              nodeSelector:
+                "kubernetes.io/os": linux
