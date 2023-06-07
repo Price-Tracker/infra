@@ -19,9 +19,9 @@ spec:
     controller:
       service:
         enableHttps: false
-        type: NodePort
-        nodePorts:
-          http: 30007
       config:
         enable-brotli: "true"
+      hostNetwork: true
+      hostPort:
+        enabled: true
 
