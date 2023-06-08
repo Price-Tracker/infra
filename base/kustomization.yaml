@@ -5,5 +5,4 @@ resources:
 - automation
 - imagepolicy
 - namespaces
-- secrets
 - sources

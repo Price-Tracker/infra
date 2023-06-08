@@ -5,5 +5,3 @@ metadata:
 spec:
   image: ghcr.io/price-tracker/frontend
   interval: 1m0s
-  secretRef:
-    name: ghcr
