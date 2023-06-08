@@ -36,5 +36,4 @@ spec:
                   key: jwt-secret
             - name: JWT_EXPIRES_IN_SECS
               value: "300"
-      imagePullSecrets:
-        - name: ghcr
+
