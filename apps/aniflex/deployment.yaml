@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aniflex-deployment
+  labels:
+    app: aniflex
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: aniflex
+  template:
+    metadata:
+      labels:
+        app: aniflex
+    spec:
+      containers:
+        - name: aniflex-container
+          image: ghcr.io/athlonsky/aniflex:master-c28179a2-1686661708 # {"$imagepolicy": "flux-system:aniflex"}
+          ports:
+            - name: http
+              containerPort: 3000
+              protocol: TCP
