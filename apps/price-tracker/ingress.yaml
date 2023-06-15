@@ -2,6 +2,9 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: price-tracker-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      rewrite /aniflex https://aniflex.elxreno.me permanent;
 spec:
   ingressClassName: nginx
   rules:
